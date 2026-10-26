@@ -10,7 +10,13 @@
 <g fill="#f4f2f8"><text x="104" y="318" font-family="Arial,Helvetica,sans-serif" font-size="61" letter-spacing="-2.7">Every webinar.</text><text x="104" y="392" font-family="Georgia,serif" font-size="61" font-style="italic" letter-spacing="-2">In its right place.</text></g>
 <text x="107" y="452" fill="#a7a4b4" font-family="Arial,Helvetica,sans-serif" font-size="21">One workspace. From first idea to follow-up.</text>
 <g font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#d0cbdc"><text x="107" y="552">Plan</text><circle cx="168" cy="546" r="2" fill="#746488"/><text x="191" y="552">Engage</text><circle cx="279" cy="546" r="2" fill="#746488"/><text x="302" y="552">Review</text></g>
-<g transform="translate(726 226) rotate(-4 308 75)" filter="url(#shadow)"><rect x="-1" y="-1" width="618" height="153" rx="18" fill="#fff" fill-opacity=".15"/><g clip-path="url(#a)"><svg width="616" height="151" viewBox="706 170 768 188" preserveAspectRatio="xMidYMid slice"><use href="#product-ui"/></svg></g></g>
-<g transform="translate(769 424) rotate(-4 162 86)" filter="url(#shadow)"><g clip-path="url(#b)"><svg width="325" height="172" viewBox="334 696 375 198" preserveAspectRatio="xMidYMin slice"><use href="#product-ui"/></svg></g></g>
-<g transform="translate(1117 402) rotate(-4 162 86)" filter="url(#shadow)"><g clip-path="url(#c)"><svg width="325" height="172" viewBox="722 696 375 198" preserveAspectRatio="xMidYMin slice"><use href="#product-ui"/></svg></g></g>
-<text x="106" y="704" fill="#767380" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="2">PRODUCT DESIGN / SAAS EXPERIENCE</text><text x="1336" y="704" text-anchor="end" fill="#767380" font-family="Arial,Helvetica,sans-serif" font-size="15">Akshay Attri</text></svg>
+<g filter="url(#shadow)">
+<path d="M1005 527H1083L1095 625H993Z" fill="#303039" stroke="#50505c"/>
+<path d="M971 625H1117L1141 640Q1145 647 1135 649H953Q943 647 947 640Z" fill="#383842" stroke="#595964"/>
+<rect x="710" y="202" width="664" height="382" rx="18" fill="#16161d" stroke="#66616f" stroke-width="1.5"/>
+<rect x="720" y="212" width="644" height="342" rx="5" fill="#fff"/>
+<svg x="720" y="212" width="644" height="342" viewBox="0 0 1920 1018" preserveAspectRatio="xMidYMid meet"><use href="#product-ui"/></svg>
+<path d="M711 562H1373V566Q1373 583 1356 583H728Q711 583 711 566Z" fill="#292830"/>
+<circle cx="1042" cy="569" r="3" fill="#aaa4b8"/>
+<path d="M729 203H1354" stroke="#cbc6dd" stroke-opacity=".2"/>
+</g><text x="106" y="704" fill="#767380" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="2">PRODUCT DESIGN / SAAS EXPERIENCE</text><text x="1336" y="704" text-anchor="end" fill="#767380" font-family="Arial,Helvetica,sans-serif" font-size="15">Akshay Attri</text></svg>
