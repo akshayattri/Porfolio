@@ -1,3 +1,498 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EasyCRM — Akshay Attri</title><meta name="description" content="A product design case study covering workflows, design decisions, and UI foundations for EasyCRM."><link rel="stylesheet" href="case-studies.css"><style>
-.design-conclusion{font-size:18px;line-height:1.85;margin-top:28px}.crm-flow-section h2{margin-top:20px}.flow-open{display:block;width:100%;padding:0;border:1px solid #e0d8e7;border-radius:16px;overflow:hidden;background:#f1edf5;cursor:zoom-in;margin:35px 0 20px}.flow-open img{display:block;width:100%;height:auto}.flow-caption{font-size:16px;line-height:1.8;color:#696170}.flow-decisions{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:35px}.flow-decisions strong{font-size:20px;font-weight:500}.flow-decisions p{font-size:17px;margin-top:14px}.crm-screen-collection{padding:85px 0 60px}.crm-collection-intro{max-width:750px;margin-bottom:45px}.crm-collection-intro h2{font-family:Georgia,serif;font-weight:400;letter-spacing:-1.7px;line-height:1.2;margin-top:20px}.crm-collection-intro p{font-size:19px}.crm-gallery-feature{display:grid;grid-template-columns:1fr 2.1fr;gap:35px;padding:38px;background:#211c3d;color:#f1edf7;border-radius:12px;align-items:center;margin-top:50px}.crm-feature-copy .tag{color:#c4b7fa;font-size:14px;letter-spacing:1px}.crm-feature-copy h3{font-family:Georgia,serif;font-size:33px;line-height:1.2;letter-spacing:-.8px;font-weight:400;margin:20px 0}.crm-feature-copy p{font-size:17px;color:#c5bfd3;line-height:1.8}.crm-image-index{display:block;font-size:15px;color:#b3a9c8;margin-top:25px}.crm-gallery-feature .image-open,.crm-gallery-tile .image-open{display:block;width:100%;padding:0;border:1px solid #dcd5e5;background:#fff;border-radius:6px;cursor:zoom-in;overflow:hidden}.crm-gallery-feature img,.crm-gallery-tile img{display:block;width:100%;height:auto}.crm-gallery-trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:35px 0 10px}.crm-gallery-tile{margin:0;min-width:0}.crm-gallery-tile .image-open{padding:5px;background:#fff;box-shadow:0 10px 25px #30233c08}.crm-gallery-tile figcaption{display:flex;gap:13px;align-items:baseline;margin-top:18px}.crm-gallery-tile figcaption span{font-size:15px;color:#91819e}.crm-gallery-tile figcaption strong{font-size:19px;line-height:1.5;font-weight:500}.crm-gallery-tile>p{font-size:16px;line-height:1.75;margin:10px 0 0;color:#696170}.crm-gallery-hint{font-size:16px;text-align:center;color:#696170;margin-top:35px}@media(max-width:800px){.flow-decisions{grid-template-columns:1fr;gap:18px}.crm-screen-collection{padding:60px 0 45px}.crm-gallery-feature{grid-template-columns:1fr;padding:25px;gap:25px;margin-top:30px}.crm-feature-copy h3{font-size:30px}.crm-gallery-trio{grid-template-columns:1fr;gap:30px}.crm-gallery-tile figcaption strong{font-size:21px}.crm-gallery-tile>p{font-size:18px}.crm-image-index{margin-top:15px}.crm-collection-intro p{font-size:18px}.flow-caption{font-size:16px}}
-</style><link rel="stylesheet" href="portfolio-polish.css"><style>.product-live-row{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:28px 0 10px}.product-live-badge{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;line-height:1.5;padding:7px 12px;border:1px solid #d8dfd2;border-radius:30px;color:#486044;background:#edf2e8}.product-live-badge:before{content:'';width:6px;height:6px;border-radius:50%;background:#638752}.product-website{font-size:17px;line-height:1.6;color:inherit;text-decoration:underline;text-underline-offset:5px;text-decoration-color:#b8b1c3}.product-website:hover{text-decoration-color:currentColor}@media(max-width:700px){.product-live-row{gap:14px;margin-top:24px}.product-website{font-size:16px}}</style></head><body class="crm"><header><nav><a class="brand" href="index.html">Akshay Attri</a><div class="links"><a href="index.html#work">Work</a><a href="assets/Akshay-Attri-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a><a href="mailto:akshayattri1@gmail.com">Contact ↗</a></div></nav></header><section class="hero"><div class="wrap"><div class="hero-grid"><div><span class="tag">EasyCRM / Product design</span><h1>Relationships.<br>In context.</h1><p class="lead">Connecting people, conversations, and the next step in a customer relationship.</p><div class="product-live-row"><span class="product-live-badge">Live product</span><a class="product-website" href="https://easywebinar.com/easycrm/" target="_blank" rel="noopener noreferrer" aria-label="Visit EasyCRM product website (opens in a new tab)">Visit EasyCRM website ↗</a></div></div><div class="hero-image"><button class="shot" aria-label="Enlarge EasyCRM deals pipeline"><img src="assets/easycrm-hero.webp" alt="EasyCRM deals pipeline" loading="lazy" width="1920" height="1018"></button></div></div></div></section><section class="case-brief" aria-label="Project at a glance"><div class="case-reading"><span>4 min read · Selected decisions</span><a href="index.html#work">All projects ↗</a></div><div class="brief-top"><span class="brief-eyebrow">Project at a glance</span><span class="brief-period">Professional product · EasyWebinar ecosystem</span></div><dl class="brief-facts"><div><dt>My role</dt><dd>Product / UI/UX designer</dd></div><div><dt>Collaboration</dt><dd>Product &amp; engineering</dd></div><div><dt>Scope</dt><dd>Leads, deals, tasks &amp; records</dd></div></dl><div class="brief-story"><div><h2>The challenge</h2><p>Make dense customer information useful when someone needs to decide what happens next.</p></div><div><h2>My contribution</h2><p>I designed record layouts, collection views, contextual actions, and reusable interface patterns.</p></div><div><h2>The result</h2><p>Customer identity, activity, opportunities, and follow-up share a connected record model.</p></div></div><p class="brief-constraint"><strong>Design constraint · Density with context.</strong> Support comparison across many records while keeping individual relationships understandable.</p></section><div class="wrap"><div class="body-grid"><aside class="contents"><a href="#brief">01 / The brief</a><a href="#model">03 / Relationship model</a><a href="#workflow">04 / Workflow decisions</a><a href="#foundations">05 / Visual system</a><a href="#delivery">06 / Reflection</a><a href="#user-flow">07 / User flow</a></aside><article><section class="section" id="brief"><div class="index-title"><span>01</span><h2>The record is only<br>the beginning.</h2></div><p class="lead">A CRM needs to help people interpret a relationship, not simply store it.</p><p>My challenge was to connect overview-level work—scanning leads, reviewing a pipeline, and planning tasks—with the details of an individual customer. I used a consistent structure for moving from a collection to a record and then to the next action.</p><div class="case-note" style="margin-top:35px"><span class="tag">The design question</span><h3 style="margin-top:20px">How do I make dense customer information feel actionable?</h3><p style="margin-bottom:0">Give different information different jobs: identification, history, progress, and follow-up.</p></div></section><section class="section line" id="model"><div class="index-title"><span>03</span><h2>One relationship.<br>Three layers of context.</h2></div><div class="screen"><button class="shot" aria-label="Enlarge Lead detail with profile, activity, and related work"><img src="assets/easycrm-1.webp" alt="Lead detail with profile, activity, and related work" loading="lazy" width="1920" height="1018"></button></div><div class="three-zone"><div><b>Identity</b><p>Who this person is, who owns the relationship, and where it came from.</p></div><div><b>History</b><p>What happened across emails, calls, notes, and updates.</p></div><div><b>Next action</b><p>Deals, tasks, and events connected to the record.</p></div></div><p>I gave the activity timeline the largest region because it carries the evolving relationship. Stable profile information sits to the left; related work sits to the right. This separates reading history from deciding what to do next.</p><div class="decision-comparison"><span class="comparison-label">Decision &amp; tradeoff</span><div><h3>Approach</h3><p>Separate identity, history, and related work into stable regions.</p></div><div><h3>Risk addressed</h3><p>Equal visual emphasis makes dense records harder to scan.</p></div><div><h3>Why this direction</h3><p>The central timeline prioritizes reading; adjacent tasks and deals keep follow-up close.</p></div></div></section><section class="section line" id="workflow"><div class="index-title"><span>04</span><h2>Different views.<br>Different decisions.</h2></div><div class="crm-ledger"><div><h3>Table for comparison</h3><p>I used aligned columns for lead identity, ownership, and status. This supports scanning across records; search and filtering stay above the collection.</p></div><div><h3>Board for progression</h3><p>Deals are grouped by stage, making progress spatial. Cards repeat the same information pattern so the pipeline remains readable as opportunities accumulate.</p></div><div><h3>Tasks for commitment</h3><p>A dedicated task workspace supports planning across customers. Record-level tasks preserve the link between follow-up and the relationship.</p></div></div><div style="margin-top:45px"></div><div class="case-note" style="margin-top:35px"><span class="tag">The tradeoff</span><h3 style="margin-top:15px">Density versus confidence.</h3><p style="margin:0">Compact tables support comparison but demand consistent alignment and clear states. The design uses neutral surfaces, restrained status color, and record detail pages to manage that tension.</p></div></section><section class="section line" id="foundations"><div class="index-title"><span>05</span><h2>The visual system:<br>quiet, precise, repeatable.</h2></div><div class="foundation"><span class="tag">Color architecture</span><div class="palette"><div class="swatch"><i style="--c:#1E1B3A"></i><b>Navigation</b><small>#1E1B3A</small></div><div class="swatch"><i style="--c:#6556F4"></i><b>Primary action</b><small>#6556F4</small></div><div class="swatch"><i style="--c:#F8F9FB"></i><b>Canvas</b><small>#F8F9FB</small></div><div class="swatch"><i style="--c:#FFFFFF"></i><b>Surface</b><small>#FFFFFF</small></div></div><p>Deep aubergine establishes the navigation shell. Violet carries interactive emphasis, while white cards and pale canvas tones support dense customer information.</p><div class="type-show"><div><div class="aa">Aa</div></div><div class="type-lines"><div style="font-size:26px;font-weight:600">A clear hierarchy.<small>PAGE TITLE / STRONG EMPHASIS</small></div><div style="font-size:17px;font-weight:600">Section heading<small>GROUPING / WAYFINDING</small></div><div style="font-size:16px">Readable interface text<small>BODY / LABELS / SUPPORTING METADATA</small></div></div></div><div class="components" aria-label="Reconstructed component specimens"><span class="demo-primary">Add lead</span><span class="demo-secondary">Add note</span><span class="chip">Active</span><span class="toggle"></span></div><p class="note">Visual-system study based on the product screens; color values are approximate.</p></div><div class="two" style="margin-top:45px"><div><h3>Cards as units of work.</h3><p>Pipeline cards use a repeated anatomy so each opportunity can be recognized within a larger board. Column grouping carries the workflow stage; the card carries the individual deal.</p></div><div class="ui-crop"><img loading="lazy" src="assets/easycrm-detail-0.webp" alt="Actual EasyCRM pipeline card detail" width="384" height="997"></div></div></section><section class="section line compact-outcome" id="delivery"><span class="tag">Outcome &amp; next check</span><h2>Context stays with<br>the next action.</h2><p>Lists, record history, deals, and tasks share a consistent customer model. A useful next evaluation is whether someone can move from an unfamiliar lead to an assigned follow-up while retaining the relationship context.</p></section><section class="section line crm-flow-section" id="user-flow"><span class="tag">07 / Connecting the workflow</span><h2>From a name in a list<br>to a meaningful next step.</h2><p>The lead detail is the point where identity, communication history, and related work meet. From there, the user can add context, create an opportunity, or plan a follow-up task.</p><button class="image-open flow-open" aria-label="Enlarge EasyCRM user flow"><img src="assets/easycrm-user-flow.svg" alt="EasyCRM workflow from lead list to record, notes, deals, follow-up tasks, activity review, and dedicated workspaces"></button><p class="flow-caption">Available task routes shown in the product; branches are optional paths.</p></section></article></div><section class="crm-screen-collection line"><div class="crm-collection-intro"><span class="tag">Selected interfaces / A system in practice</span><h2>A connected workspace.<br>Seen from every angle.</h2><p>Eight screens across customer context, opportunity management, and follow-up.</p></div><div class="crm-gallery-feature"><div class="crm-feature-copy"><span class="tag">01—04 / Understand the relationship</span><h3>Start with the people.</h3><p>A focused collection view leads into the details, history, and communication that give a customer record meaning.</p><span class="crm-image-index">01 / Lead workspace</span></div><button class="image-open" aria-label="Enlarge Lead workspace"><img loading="lazy" src="assets/crm-gallery/1.webp" alt="EasyCRM Lead workspace full screen" width="1920" height="1018"></button></div><div class="crm-gallery-trio"><figure class="crm-gallery-tile"><button class="image-open" aria-label="Enlarge Smart lists"><img loading="lazy" src="assets/crm-gallery/2.webp" alt="EasyCRM Smart lists full screen" width="1055" height="1093"></button><figcaption><span>02</span><strong>Smart lists</strong></figcaption><p>Turn a recurring filter into a reusable view.</p></figure><figure class="crm-gallery-tile"><button class="image-open" aria-label="Enlarge Relationship timeline"><img loading="lazy" src="assets/crm-gallery/3.webp" alt="EasyCRM Relationship timeline full screen" width="1920" height="1018"></button><figcaption><span>03</span><strong>Relationship timeline</strong></figcaption><p>Read the history before taking action.</p></figure><figure class="crm-gallery-tile"><button class="image-open" aria-label="Enlarge Notes &amp; communication"><img loading="lazy" src="assets/crm-gallery/4.webp" alt="EasyCRM Notes &amp; communication full screen" width="1920" height="1018"></button><figcaption><span>04</span><strong>Notes &amp; communication</strong></figcaption><p>Keep a conversation connected to its record.</p></figure></div><div class="crm-gallery-feature"><div class="crm-feature-copy"><span class="tag">05—08 / Move the work forward</span><h3>See the progress.<br>Own the next action.</h3><p>Pipeline stages, opportunity detail, and task management connect day-to-day activity to the wider sales workflow.</p><span class="crm-image-index">05 / Deals pipeline</span></div><button class="image-open" aria-label="Enlarge Deals pipeline"><img loading="lazy" src="assets/crm-gallery/5.webp" alt="EasyCRM Deals pipeline full screen" width="1920" height="1018"></button></div><div class="crm-gallery-trio"><figure class="crm-gallery-tile"><button class="image-open" aria-label="Enlarge Deal detail"><img loading="lazy" src="assets/crm-gallery/6.webp" alt="EasyCRM Deal detail full screen" width="1920" height="1018"></button><figcaption><span>06</span><strong>Deal detail</strong></figcaption><p>Review opportunity context and activity.</p></figure><figure class="crm-gallery-tile"><button class="image-open" aria-label="Enlarge Task management"><img loading="lazy" src="assets/crm-gallery/7.webp" alt="EasyCRM Task management full screen" width="1920" height="1018"></button><figcaption><span>07</span><strong>Task management</strong></figcaption><p>Coordinate assignments, priorities, and dates.</p></figure><figure class="crm-gallery-tile"><button class="image-open" aria-label="Enlarge Analytics"><img loading="lazy" src="assets/crm-gallery/8.webp" alt="EasyCRM Analytics full screen" width="1920" height="1018"></button><figcaption><span>08</span><strong>Analytics</strong></figcaption><p>Step back from records to review the wider picture.</p></figure></div><p class="crm-gallery-hint">Select a screen to inspect the full interface.</p></section><a class="end" href="goodpaw.html"><div><span class="tag">Explore another project</span><h2>GoodPaw</h2></div><span class="arr">↗</span></a><p class="footer-note">Akshay Attri · Product design portfolio · Selected work</p></div><dialog id="lightbox"><button class="close" aria-label="Close enlarged screen">×</button><img alt="Enlarged product screen"></dialog><script>const b=document.querySelector('dialog');document.querySelectorAll('.shot,.image-open').forEach(s=>s.onclick=()=>{b.querySelector('img').src=s.querySelector('img').src;b.querySelector('img').alt=s.querySelector('img').alt;b.showModal();document.body.style.overflow='hidden'});function closeBox(){b.close();document.body.style.overflow=''}b.querySelector('.close').onclick=closeBox;b.onclick=e=>{if(e.target===b)closeBox()};b.onclose=()=>document.body.style.overflow='';</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EasyCRM product design case study by Akshay Attri — an editorial exploration of connected lead records, relationship history, deals, tasks, design decisions, and the UI system.">
+  <meta name="theme-color" content="#f6f2ea">
+  <title>EasyCRM — Designing Around the Relationship | Akshay Attri</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f6f2ea;--paper-deep:#eee8dd;--ink:#27242a;--muted:#56505c;--line:#d7d0c6;--plum:#211c3d;--lilac:#6556f4;--moss:#465d50;--card:#fffdf9;--measure:72ch}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:118px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.7 "DM Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    body.modal-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration-color:currentColor}
+    button{font:inherit}
+    img{max-width:100%}
+    :focus-visible{outline:3px solid #6556f4;outline-offset:4px}
+    .skip{position:absolute;top:-100px;left:16px;background:#fff;padding:12px 20px;z-index:100}
+    .skip:focus{top:14px}
+    .container{width:min(100% - 96px,1380px);margin-inline:auto}
+    .site-header{position:sticky;z-index:35;top:0;backdrop-filter:blur(18px);background:#f6f2eaf2;border-bottom:1px solid var(--line)}
+    .top-nav{min-height:79px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .site-brand{font-size:19px;font-weight:700;letter-spacing:-.7px}
+    .site-brand:hover{text-decoration:underline;text-underline-offset:5px}
+    .site-links{display:flex;align-items:center;gap:30px;font-size:16px;font-weight:600}
+    .site-links a:hover,.text-link:hover{text-decoration:underline;text-underline-offset:6px}
+    .eyebrow,.chapter-number,.overline{font-size:16px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;line-height:1.5}
+    .eyebrow{color:var(--moss)}
+    .serif{font-family:"Instrument Serif",Georgia,serif;font-weight:400}
+    h1,h2,h3,p{margin-top:0}
+    h1{font:400 clamp(68px,8.4vw,142px)/.9 "Instrument Serif",Georgia,serif;letter-spacing:-.036em;margin:25px 0 35px;max-width:960px}
+    h1 em{color:#5f4f74;font-weight:400}
+    h2{font:400 clamp(43px,4.5vw,76px)/1.04 "Instrument Serif",Georgia,serif;letter-spacing:-.016em;margin:0 0 28px}
+    h3{font-size:clamp(22px,2.2vw,30px);line-height:1.27;letter-spacing:-.03em;margin:0 0 17px;font-weight:600}
+    p{font-size:18px;line-height:1.74;color:#4d4852}
+    p strong{color:var(--ink)}
+    .intro{font-size:clamp(20px,2.1vw,26px);line-height:1.52;color:#4f4854;max-width:770px}
+    .small-copy{font-size:16px;line-height:1.65;color:var(--muted)}
+    .hero{padding:95px 0 0}
+    .hero-meta{display:flex;align-items:center;flex-wrap:wrap;gap:13px;margin-bottom:15px}
+    .meta-dot{width:7px;height:7px;background:#6c7c64;border-radius:50%}
+    .hero-top{display:grid;grid-template-columns:1.4fr .6fr;gap:65px;align-items:end}
+    .hero-top .hero-aside{border-left:1px solid var(--line);padding:0 0 8px 28px;margin-bottom:18px}
+    .hero-aside span{display:block;color:var(--moss);font-size:16px;letter-spacing:.09em;font-weight:700;text-transform:uppercase;margin-bottom:16px}
+    .hero-aside p{font:400 30px/1.19 "Instrument Serif",Georgia,serif;color:var(--ink);margin:0}
+    .hero-bottom{display:flex;align-items:center;flex-wrap:wrap;gap:14px 30px;margin:33px 0 58px}
+    .live{display:inline-flex;align-items:center;gap:8px;border:1px solid #9cac9b;border-radius:999px;padding:9px 15px;background:#ecf1e9;font-size:16px;font-weight:600;color:#304d3b}
+    .live::before{content:"";width:7px;height:7px;background:#496e4c;border-radius:100%}
+    .text-link{font-size:17px;font-weight:600;text-decoration:underline;text-decoration-color:#8f8591;text-underline-offset:6px}
+    .hero-stage{position:relative;background:var(--plum);border-radius:18px;padding:clamp(15px,3.5vw,56px);overflow:hidden}
+    .hero-stage:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 88% 3%,#584477 0,transparent 48%);pointer-events:none}
+    .hero-screen{position:relative;width:100%;max-width:1190px;margin:auto;background:#fff;box-shadow:0 23px 55px #110e205c;border:1px solid #9e95b2;border-radius:9px;overflow:hidden}
+    .window-chrome{height:36px;display:flex;align-items:center;gap:7px;padding:0 15px;background:#eae7f1;border-bottom:1px solid #d8d3e1}
+    .window-chrome i{width:9px;height:9px;border-radius:50%;background:#aaa3b4}
+    .window-chrome span{font-size:14px;color:#635b70;margin-left:auto;line-height:1.3}
+    .zoom{display:block;width:100%;padding:0;border:0;background:#fff;cursor:zoom-in;position:relative;text-align:left}
+    .zoom img{display:block;width:100%;height:auto;object-fit:contain;transition:filter .18s ease}
+    .zoom:focus-visible{outline-offset:-5px}
+    .zoom:hover img{filter:brightness(.97)}
+    .zoom .zoom-cue{position:absolute;right:16px;bottom:16px;background:#221d32f2;color:#fff;padding:8px 13px;border-radius:999px;font-size:16px;font-weight:600;line-height:1.4}
+    .hero-stage figcaption{font-size:16px;color:#e6dff0;margin-top:17px;position:relative}
+    .facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line);margin-top:48px;padding:27px 0 30px;gap:20px}
+    .facts div{border-left:1px solid var(--line);padding-left:25px}
+    .facts div:first-child{border:0;padding-left:0}
+    .facts dt{font-size:16px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;color:#726a70;margin:0 0 8px}
+    .facts dd{font-size:18px;font-weight:600;line-height:1.48;margin:0}
+    .reading-grid{display:grid;grid-template-columns:230px minmax(0,1fr);gap:clamp(45px,5vw,95px);align-items:start;margin-top:90px}
+    .section-rail{position:sticky;top:115px;align-self:start;padding:10px 0 0}
+    .rail-label{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#716776;display:block;margin-bottom:27px}
+    .section-rail nav{display:flex;flex-direction:column;gap:3px}
+    .section-rail a{display:flex;align-items:baseline;gap:12px;padding:12px 13px;border-left:2px solid transparent;color:#615a63;font-size:16px;line-height:1.45;transition:background .2s,color .2s}
+    .section-rail a span{font-size:15px;color:#887c8c}
+    .section-rail a:hover,.section-rail a[aria-current="location"]{color:var(--ink);background:#eae3d9;border-left-color:var(--lilac)}
+    .section-rail .rail-foot{font-size:16px;color:#6e656d;border-top:1px solid var(--line);margin-top:34px;padding-top:24px;line-height:1.7}
+    .chapter{padding:0 0 95px;margin-bottom:95px;border-bottom:1px solid var(--line);scroll-margin-top:125px}
+    .chapter:last-of-type{margin-bottom:0}
+    .chapter-kicker{display:flex;gap:18px;align-items:center;margin-bottom:30px;color:var(--moss)}
+    .chapter-kicker .chapter-number{display:inline-grid;place-items:center;min-width:46px;min-height:46px;border:1px solid #a8b0a7;border-radius:50%}
+    .chapter-kicker .overline{max-width:420px}
+    .chapter > p,.chapter > .intro{max-width:var(--measure)}
+    .key-question{border-left:4px solid #7860b6;padding:7px 0 10px 31px;margin:50px 0 55px}
+    .key-question p{font:400 clamp(28px,3.1vw,44px)/1.27 "Instrument Serif",Georgia,serif;color:var(--ink);margin:12px 0 0;max-width:810px}
+    .three-insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;margin:36px 0}
+    .insight{padding:27px 25px 26px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+    .insight .insight-num{font:400 37px/1 "Instrument Serif",Georgia,serif;color:#6556f4;display:block;margin-bottom:26px}
+    .insight h3{font-size:21px;line-height:1.28}
+    .insight p{font-size:17px;margin:0}
+    .research-strip{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:33px 0}
+    .method-box{border-top:2px solid #302842;padding-top:24px}
+    .method-box h3{font-size:23px}
+    .method-box p{font-size:17px}
+    .disclosure{background:#eee8df;border-radius:10px;padding:21px 25px;margin:35px 0;font-size:17px;line-height:1.65;color:#554d56}
+    .persona-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:40px 0}
+    .persona-card{border-radius:14px;overflow:hidden;background:#fffefa;border:1px solid var(--line)}
+    .persona-head{display:flex;align-items:center;gap:17px;background:#e8e2da;padding:23px}
+    .persona-monogram{display:grid;place-items:center;flex:0 0 62px;height:62px;border-radius:50%;font:400 29px/1 "Instrument Serif",Georgia,serif;background:#342b49;color:#fff}
+    .persona-head h3{font-size:22px;margin:0 0 3px}
+    .persona-head span{font-size:16px;color:#514a54}
+    .persona-body{padding:27px}
+    .persona-body p{font-size:17px}
+    .persona-body strong{display:block;font-size:16px;text-transform:uppercase;letter-spacing:.04em;color:#44364e;margin:25px 0 8px}
+    .persona-body blockquote{margin:0;font:400 25px/1.3 "Instrument Serif",Georgia,serif;color:#31263d}
+    .architecture{display:grid;grid-template-columns:1fr 1.2fr;gap:25px;margin:40px 0}
+    .ia-pane{padding:30px 26px;border-radius:12px;background:#251f3d;color:#f9f5ff}
+    .ia-pane h3{color:#fff;font-size:23px;margin-bottom:30px}
+    .ia-tree{font-size:17px;line-height:1.5;display:grid;gap:10px}
+    .ia-root{background:#4e3e76;padding:14px 17px;border-radius:8px;font-weight:700}
+    .ia-branch{margin-left:20px;border-left:2px solid #9e88ca;padding:11px 0 11px 17px}
+    .ia-branch strong{display:block;color:#fff}
+    .ia-branch span{display:block;color:#ddd3ed;font-size:16px;margin-top:3px}
+    .ia-explain{display:flex;flex-direction:column;gap:16px}
+    .ia-explain article{background:#fffdf9;border:1px solid var(--line);padding:24px 27px;border-radius:12px}
+    .ia-explain h3{font-size:21px;margin-bottom:8px}
+    .ia-explain p{font-size:17px;margin:0}
+    .flow-stage{padding:30px;background:#ebe4ee;border-radius:14px;border:1px solid #dacfe2;margin-top:40px}
+    .flow-stage .zoom{border-radius:8px;overflow:hidden;background:#f1edf5}
+    .flow-stage .zoom img{display:block;max-width:100%;height:auto}
+    .flow-stage .zoom-cue{background:#211c3d}
+    .figcaption{font-size:16px;line-height:1.6;color:#665b66;margin:13px 0 0}
+    .step-line{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:43px 0 15px;border-top:1px solid #d0c7d1}
+    .step-line div{padding:21px 18px 10px 0;position:relative}
+    .step-line div:before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--lilac)}
+    .step-line strong{display:block;font-size:17px;line-height:1.3}
+    .step-line span{display:block;font-size:16px;color:#625964;margin-top:6px}
+    .decision-panel{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:37px 0 38px}
+    .decision-box{padding:28px;border-radius:12px;border:1px solid var(--line);background:#fffdf9}
+    .decision-box .overline{display:block;color:#7864a1;margin-bottom:14px}
+    .decision-box p{font-size:17px;margin:0}
+    .large-screen{margin:37px 0 17px;background:#f0e9f3;padding:clamp(14px,3vw,38px);border-radius:14px;border:1px solid #e0d4e7}
+    .large-screen .zoom{border:1px solid #d2c5d8;border-radius:8px;overflow:hidden;box-shadow:0 15px 35px #2519361a}
+    .large-screen figcaption{font-size:16px;color:#5b5160;margin-top:16px}
+    .editorial-split{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:46px 0 30px;align-items:start}
+    .editorial-split .split-callout{border-top:2px solid #2a2333;padding-top:22px}
+    .editorial-split .split-callout h3{font-size:25px}
+    .editorial-split .split-callout p{font-size:18px}
+    .frame-crop{background:#fff;border:1px solid #dcd2dd;padding:17px;border-radius:12px}
+    .frame-crop img{display:block;max-height:550px;height:auto;width:auto;max-width:100%;margin:0 auto;object-fit:contain}
+    .system-surface{padding:clamp(23px,4vw,48px);background:#faf9fb;border:1px solid #dcd6e1;border-radius:16px;margin-top:40px;color:#292431}
+    .system-header{display:flex;justify-content:space-between;gap:25px;align-items:baseline;flex-wrap:wrap;margin-bottom:36px}
+    .system-header h3{font:400 40px/1.1 "Instrument Serif",Georgia,serif;margin:0}
+    .system-header p{font-size:16px;margin:0;max-width:350px}
+    .token-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:42px}
+    .token{min-width:0}
+    .token-color{height:115px;background:var(--swatch);border:1px solid #d5d0d8;border-radius:9px;margin-bottom:12px}
+    .token strong,.token code{display:block;font-size:16px;overflow-wrap:anywhere;line-height:1.5}
+    .token code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#675e70}
+    .system-divider{border:0;border-top:1px solid #d8d2de;margin:38px 0}
+    .type-system{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+    .type-system .type-lead{font:700 48px/1.11 Arial,sans-serif;letter-spacing:-.04em;color:#221e39}
+    .type-stack{display:grid;gap:14px}
+    .type-row{border-bottom:1px solid #e0dce5;padding-bottom:12px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:baseline}
+    .type-row span{font-size:17px}
+    .type-row b{font:600 16px/1.4 ui-monospace,Consolas,monospace;color:#665d73}
+    .specimens{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:40px}
+    .specimen-panel{background:#fff;border:1px solid #ded9e3;border-radius:12px;padding:25px}
+    .specimen-panel h4{font-size:18px;margin:0 0 24px}
+    .demo-line{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .sample-primary,.sample-secondary,.sample-filter{display:inline-flex;align-items:center;justify-content:center;border-radius:7px;min-height:44px;padding:8px 16px;font-size:16px;font-weight:600}
+    .sample-primary{background:#6556f4;color:#fff}
+    .sample-secondary{border:1px solid #d2cedb;background:#fff;color:#342c44}
+    .sample-filter{border:1px solid #d9d6e1;background:#f8f9fb;font-weight:500;color:#494254}
+    .sample-status{display:inline-flex;align-items:center;gap:7px;background:#eaf3ef;color:#286d55;padding:6px 13px;border-radius:999px;font-size:16px;font-weight:600}
+    .sample-status:before{content:"";width:7px;height:7px;background:#377958;border-radius:50%}
+    .sample-tabs{display:flex;flex-wrap:wrap;gap:15px;border-bottom:1px solid #e4e1e9;font-size:16px;color:#6b6373}
+    .sample-tabs span{padding:9px 1px}
+    .sample-tabs span:first-child{font-weight:700;border-bottom:2px solid #6556f4;color:#31273b}
+    .demo-deal{border:1px solid #ded9e5;padding:17px;border-radius:9px;margin-top:16px;max-width:290px;box-shadow:0 4px 20px #2019320a}
+    .demo-deal strong{display:block;font-size:17px;margin-bottom:5px}
+    .demo-deal small{display:block;font-size:16px;color:#695f72}
+    .demo-deal .deal-foot{border-top:1px solid #eae6ed;margin-top:15px;padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:16px;color:#544c5e}
+    .avatar{display:inline-grid;place-items:center;background:#ded7f8;color:#42368e;width:32px;height:32px;border-radius:50%;font-size:14px;font-weight:700}
+    .audit-caption{font-size:16px;color:#655e6c;margin:23px 0 0}
+    .gallery-intro{display:grid;grid-template-columns:1fr .65fr;gap:45px;align-items:end;margin-bottom:32px}
+    .gallery-intro p{font-size:18px;margin:0 0 10px}
+    .gallery-feature{background:var(--plum);color:#fff;padding:clamp(20px,3vw,40px);border-radius:14px;margin:43px 0 25px}
+    .gallery-feature .gallery-label{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:23px}
+    .gallery-feature h3{font:400 clamp(31px,3.4vw,49px)/1.09 "Instrument Serif",Georgia,serif;margin:9px 0 0;color:#fff}
+    .gallery-feature p{color:#e1d9ea;font-size:17px;max-width:450px;margin:7px 0 0}
+    .gallery-feature .zoom{border-radius:8px;overflow:hidden}
+    .gallery-feature .zoom img{width:100%;height:auto}
+    .gallery-feature .overline{color:#d6c7f0}
+    .gallery-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:26px 0}
+    .gallery-tile{min-width:0;margin:0}
+    .gallery-tile .zoom{border:1px solid #d2cbd7;overflow:hidden;border-radius:9px;background:#fff;padding:8px}
+    .gallery-tile figcaption{display:flex;align-items:baseline;gap:18px;margin-top:17px}
+    .gallery-tile figcaption span{font:400 28px/1 "Instrument Serif",Georgia,serif;color:#786986}
+    .gallery-tile figcaption strong{font-size:19px;line-height:1.4}
+    .gallery-tile p{font-size:17px;margin:7px 0 0 45px}
+    .gallery-wide{margin:24px 0 48px}
+    .gallery-wide .zoom{padding:clamp(11px,2vw,24px);background:#f0eaf0}
+    .gallery-wide figcaption{margin-top:14px;font-size:17px;display:flex;gap:17px;align-items:baseline}
+    .gallery-wide figcaption strong{font-size:20px}
+    .reflection{background:#e9e3d9;padding:clamp(25px,4vw,52px);border-radius:13px;margin:39px 0}
+    .reflection h3{font:400 42px/1.1 "Instrument Serif",Georgia,serif;margin-bottom:24px}
+    .reflection ul{list-style:none;margin:0;padding:0;display:grid;gap:15px}
+    .reflection li{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:17px 0;border-top:1px solid #cfc6ba;font-size:18px;line-height:1.6}
+    .reflection li strong{font-size:16px;text-transform:uppercase;letter-spacing:.07em;color:#53465c}
+    .ending{margin:35px 0 75px}
+    .ending p{max-width:750px}
+    .next-project{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:52px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .next-project span{font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#665e65}
+    .next-project h2{font-size:64px;margin:10px 0 0}
+    .next-project .next-arrow{font-size:45px;transition:transform .15s}
+    .next-project:hover .next-arrow{transform:translate(4px,-4px)}
+    .footer{display:flex;justify-content:space-between;gap:20px;padding:35px 0 45px;color:#5d5661;font-size:16px}
+    .viewer{border:0;border-radius:12px;padding:65px 20px 25px;background:#f8f7fb;color:#241c2e;max-width:min(96vw,1600px);width:min(96vw,1600px);max-height:94vh;box-shadow:0 25px 100px #0006}
+    .viewer::backdrop{background:#171321d9}
+    .viewer img{display:block;max-width:100%;max-height:calc(90vh - 145px);width:auto;height:auto;object-fit:contain;margin:auto;border-radius:4px}
+    .viewer-close{position:absolute;top:12px;right:18px;padding:8px 14px;background:#211c3d;color:#fff;border:0;border-radius:7px;font-weight:700;font-size:16px;cursor:pointer}
+    .viewer-caption{font-size:16px;line-height:1.5;text-align:center;color:#50485a;margin:15px 10px 0}
+    @media(max-width:1120px){
+      .container{width:min(100% - 64px,1380px)}
+      .reading-grid{grid-template-columns:190px minmax(0,1fr);gap:45px}
+      .hero-top{grid-template-columns:1.3fr .7fr;gap:30px}
+      .three-insights{grid-template-columns:1fr}
+      .insight{display:grid;grid-template-columns:60px 1fr;gap:0 16px}
+      .insight .insight-num{grid-row:span 2;margin-bottom:0}
+      .insight p{grid-column:2}
+      .architecture{grid-template-columns:1fr}
+      .ia-pane{display:grid;grid-template-columns:.6fr 1fr;gap:15px}
+      .ia-pane h3{grid-column:1/-1;margin-bottom:6px}
+      .ia-tree{grid-column:1/-1}
+      .token-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .specimens{grid-template-columns:1fr}
+    }
+    @media(max-width:800px){
+      html{scroll-padding-top:155px}
+      .container{width:min(100% - 40px,1380px)}
+      .top-nav{min-height:71px}
+      .site-links{gap:16px}
+      .site-links a:nth-child(2){display:none}
+      .hero{padding-top:65px}
+      .hero-top{display:block}
+      .hero-aside{display:none}
+      .hero-bottom{margin-bottom:35px}
+      h1{font-size:clamp(62px,12vw,104px);max-width:720px}
+      .facts{grid-template-columns:1fr 1fr;gap:20px}
+      .facts div:nth-child(3){border:0;padding-left:0}
+      .reading-grid{display:block;margin-top:38px}
+      .section-rail{position:sticky;top:70px;background:#f6f2eaf5;z-index:25;backdrop-filter:blur(15px);border-bottom:1px solid var(--line);padding:7px 0;margin-bottom:63px}
+      .section-rail .rail-label,.section-rail .rail-foot{display:none}
+      .section-rail nav{display:flex;flex-direction:row;gap:0;overflow-x:auto;scrollbar-width:thin}
+      .section-rail a{flex:0 0 auto;white-space:nowrap;border-left:0;border-bottom:2px solid transparent;padding:10px 13px}
+      .section-rail a[aria-current="location"],.section-rail a:hover{border-left-color:transparent;border-bottom-color:var(--lilac)}
+      .chapter{scroll-margin-top:160px;padding-bottom:70px;margin-bottom:70px}
+      .hero-stage{border-radius:11px}
+      .research-strip,.persona-grid{grid-template-columns:1fr}
+      .step-line{grid-template-columns:1fr 1fr;row-gap:19px}
+      .step-line div:nth-child(3),.step-line div:nth-child(4){border-top:1px solid #d0c7d1;padding-top:22px}
+      .step-line div:nth-child(3):before,.step-line div:nth-child(4):before{top:-6px}
+      .decision-panel,.editorial-split,.type-system,.gallery-intro{grid-template-columns:1fr}
+      .gallery-pair{grid-template-columns:1fr}
+      .gallery-tile p{margin-left:43px}
+    }
+    @media(max-width:500px){
+      body,p{font-size:17px}
+      .container{width:min(100% - 32px,1380px)}
+      .top-nav{min-height:67px}
+      .site-brand{font-size:17px}
+      .site-links{font-size:15px;gap:14px}
+      .hero{padding-top:45px}
+      h1{font-size:clamp(60px,13vw,78px)}
+      h2{font-size:clamp(42px,10vw,58px)}
+      .hero-bottom{gap:13px}
+      .hero-stage{padding:12px}
+      .window-chrome{height:27px}
+      .window-chrome span{font-size:11px}
+      .zoom .zoom-cue{font-size:14px;padding:6px 9px;right:8px;bottom:8px}
+      .facts{gap:15px}
+      .facts dd{font-size:16px}
+      .facts dt{font-size:14px}
+      .chapter-kicker{gap:12px}
+      .chapter-kicker .overline{font-size:14px}
+      .research-strip{gap:10px}
+      .insight{display:block}
+      .insight .insight-num{margin-bottom:12px}
+      .persona-head{padding:20px}
+      .persona-body{padding:22px}
+      .flow-stage{padding:13px}
+      .system-surface{padding:17px}
+      .token-color{height:75px}
+      .type-system .type-lead{font-size:39px}
+      .specimen-panel{padding:19px}
+      .reflection li{grid-template-columns:1fr;gap:6px}
+      .next-project h2{font-size:52px}
+      .footer{flex-direction:column}
+      .viewer{padding:65px 10px 18px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to case study</a>
+  <header class="site-header">
+    <nav class="top-nav container" aria-label="Main navigation">
+      <a class="site-brand" href="index.html">Akshay Attri</a>
+      <div class="site-links"><a href="index.html#work">Selected work</a><a href="assets/Akshay-Attri-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé ↗</a><a href="mailto:akshayattri1@gmail.com">Contact ↗</a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="page-title">
+      <div class="hero-meta"><span class="eyebrow">Case study / EasyCRM</span><span class="meta-dot"></span><span class="eyebrow">Product design · CRM</span></div>
+      <div class="hero-top">
+        <div><h1 id="page-title">A customer is <em>more than a row.</em></h1><p class="intro">A connected CRM experience that brings customer identity, conversations, opportunities, and follow-up into the same working context.</p></div>
+        <div class="hero-aside"><span>The design premise</span><p>Make the next action visible without losing the relationship behind it.</p></div>
+      </div>
+      <div class="hero-bottom"><span class="live">Live product</span><a class="text-link" href="https://easywebinar.com/easycrm/" target="_blank" rel="noopener noreferrer">Visit EasyCRM website ↗</a><a class="text-link" href="#overview">Explore the case study ↓</a></div>
+      <figure class="hero-stage">
+        <div class="hero-screen"><div class="window-chrome" aria-hidden="true"><i></i><i></i><i></i><span>EasyCRM · Connected workspace</span></div><button class="zoom" type="button" aria-label="View the full EasyCRM deals workspace image"><img src="assets/easycrm-hero.webp" alt="EasyCRM deals pipeline interface, with opportunities arranged into stages" width="1920" height="1018" fetchpriority="high"><span class="zoom-cue" aria-hidden="true">View screen ↗</span></button></div>
+        <figcaption>Product interface · EasyCRM workspace. Open the image to inspect the full screen.</figcaption>
+      </figure>
+      <dl class="facts" aria-label="Project details">
+        <div><dt>My role</dt><dd>Product / UI/UX Designer</dd></div>
+        <div><dt>Product</dt><dd>EasyCRM in the EasyWebinar ecosystem</dd></div>
+        <div><dt>Scope</dt><dd>Leads · Records · Deals · Tasks</dd></div>
+        <div><dt>Collaboration</dt><dd>Product &amp; engineering</dd></div>
+      </dl>
+    </section>
+    <div class="container reading-grid">
+      <aside class="section-rail" aria-label="Case study chapters">
+        <span class="rail-label">Inside this story</span>
+        <nav aria-label="Chapter navigation">
+          <a href="#overview"><span>01</span> The challenge</a>
+          <a href="#discovery"><span>02</span> User lens</a>
+          <a href="#architecture"><span>03</span> Information architecture</a>
+          <a href="#decisions"><span>04</span> UX decisions</a>
+          <a href="#system"><span>05</span> Design system</a>
+          <a href="#screens"><span>06</span> Final interfaces</a>
+          <a href="#reflection"><span>07</span> Outcomes</a>
+        </nav>
+        <p class="rail-foot">A product story about finding the signal in customer data.</p>
+      </aside>
+      <div class="story">
+        <section class="chapter" id="overview" aria-labelledby="overview-title">
+          <div class="chapter-kicker"><span class="chapter-number">01</span><span class="overline">The challenge / The work between interactions</span></div>
+          <h2 id="overview-title">A CRM holds the data. <em class="serif">People carry the context.</em></h2>
+          <p class="intro">When a salesperson opens a customer record, the question is rarely “what data do we have?” It is “what happened, where do we stand, and what should happen next?”</p>
+          <p>EasyCRM brings leads, communication history, deals, and tasks into a connected workspace. The design challenge was to make each of those views useful on its own while preserving the relationship between them.</p>
+          <div class="key-question"><span class="eyebrow">The central design question</span><p>How might we help a team move from a customer list to a confident next action without piecing the story together across screens?</p></div>
+          <div class="three-insights">
+            <article class="insight"><span class="insight-num">01</span><h3>Context is scattered</h3><p>Contact details, notes, activity, and opportunities answer different questions but need to be understood together.</p></article>
+            <article class="insight"><span class="insight-num">02</span><h3>Views serve different jobs</h3><p>A lead table supports comparison. A timeline supports understanding. A deal board supports tracking progress.</p></article>
+            <article class="insight"><span class="insight-num">03</span><h3>Follow-up is the real work</h3><p>Finding a customer is only the start. The interface needs to make the next useful step discoverable and attributable.</p></article>
+          </div>
+          <p class="small-copy">These are design-framing observations based on the product workflows, not quantified user-research findings.</p>
+        </section>
+        <section class="chapter" id="discovery" aria-labelledby="discovery-title">
+          <div class="chapter-kicker"><span class="chapter-number">02</span><span class="overline">Discovery / Understand the work</span></div>
+          <h2 id="discovery-title">Different responsibilities. <em class="serif">One shared record.</em></h2>
+          <p>The design lens came from mapping the main jobs across the CRM: triage incoming leads, revisit a relationship, manage an opportunity, and make sure a follow-up has an owner.</p>
+          <div class="research-strip">
+            <div class="method-box"><h3>Workflow review</h3><p>Break down how a person moves between collections, details, activity, deals, and tasks. Identify what needs to stay visible at each transition.</p></div>
+            <div class="method-box"><h3>Information prioritization</h3><p>Separate persistent identity, chronological context, and actionable work so that one dense screen does not give everything equal weight.</p></div>
+          </div>
+          <div class="disclosure"><strong>About the user models:</strong> The two archetypes below are workflow-based design aids, not personas claimed to come from interviews or a formal research sample.</div>
+          <div class="persona-grid">
+            <article class="persona-card"><div class="persona-head"><div class="persona-monogram" aria-hidden="true">SR</div><div><h3>Sales representative</h3><span>Primary job · Maintain momentum</span></div></div><div class="persona-body"><blockquote>“Show me what happened last so I know what to do now.”</blockquote><strong>Needs</strong><p>Find a lead quickly, recognize its stage, review recent interactions, and record the next follow-up.</p><strong>Design response</strong><p>Searchable collections, an activity-first record, and nearby notes, deals, and tasks.</p></div></article>
+            <article class="persona-card"><div class="persona-head"><div class="persona-monogram" aria-hidden="true">TL</div><div><h3>Team lead</h3><span>Primary job · See progress and ownership</span></div></div><div class="persona-body"><blockquote>“Help me see the work that is moving—and the work that needs attention.”</blockquote><strong>Needs</strong><p>Understand pipeline distribution, review ownership, and recognize tasks requiring action.</p><strong>Design response</strong><p>A consistent deal board, repeatable card anatomy, and a dedicated task workspace.</p></div></article>
+          </div>
+          <div class="decision-panel">
+            <div class="decision-box"><span class="overline">Information needs</span><h3>Recognize → Interpret → Act</h3><p>First identify the person, then read the relationship, then choose the next step. This sequence informed the record layout.</p></div>
+            <div class="decision-box"><span class="overline">Experience principle</span><h3>Details without disorientation</h3><p>Moving into a record should deepen context, not make users lose track of the work they were doing.</p></div>
+          </div>
+        </section>
+        <section class="chapter" id="architecture" aria-labelledby="architecture-title">
+          <div class="chapter-kicker"><span class="chapter-number">03</span><span class="overline">Information architecture / One connected model</span></div>
+          <h2 id="architecture-title">Organize around <em class="serif">the relationship,</em> not the menu.</h2>
+          <p class="intro">The lead record becomes the point where identity, history, and associated work meet. The broader CRM still has dedicated views for scanning and coordination.</p>
+          <div class="architecture">
+            <div class="ia-pane"><h3>Simplified product map</h3><div class="ia-tree"><div class="ia-root">EasyCRM workspace</div><div class="ia-branch"><strong>Leads</strong><span>Search · filters · smart lists</span></div><div class="ia-branch"><strong>Lead detail</strong><span>Profile · timeline · notes · emails · calls</span></div><div class="ia-branch"><strong>Deals</strong><span>Pipeline · stages · opportunity details</span></div><div class="ia-branch"><strong>Tasks</strong><span>Assignments · dates · status · related lead</span></div><div class="ia-branch"><strong>Insights</strong><span>High-level performance views</span></div></div></div>
+            <div class="ia-explain"><article><h3>01 / Collections answer “which?”</h3><p>Lists, filters, and saved segments help users locate the right records without reading every detail.</p></article><article><h3>02 / Records answer “what happened?”</h3><p>The customer page keeps identity stable while the central activity stream tells the chronological story.</p></article><article><h3>03 / Workspaces answer “what next?”</h3><p>Deals and tasks can be accessed in the context of a record or reviewed across customers.</p></article></div>
+          </div>
+          <div class="step-line" aria-label="Representative task journey">
+            <div><strong>Find</strong><span>Lead list or smart list</span></div>
+            <div><strong>Understand</strong><span>Profile and activity</span></div>
+            <div><strong>Choose</strong><span>Note, deal, or follow-up</span></div>
+            <div><strong>Continue</strong><span>Review in deals or tasks</span></div>
+          </div>
+          <figure class="flow-stage"><button class="zoom" type="button" aria-label="Open full EasyCRM information flow diagram"><img src="assets/easycrm-user-flow.svg" alt="Flow diagram: lead workspace to lead record, branching to notes and calls, deals or tasks, then review of relationship and dedicated workspaces" width="1000" height="870" loading="lazy"><span class="zoom-cue" aria-hidden="true">View flow ↗</span></button><figcaption class="figcaption">Representative user flow. Branches show possible next actions, not steps every user must complete.</figcaption></figure>
+        </section>
+        <section class="chapter" id="decisions" aria-labelledby="decisions-title">
+          <div class="chapter-kicker"><span class="chapter-number">04</span><span class="overline">Interaction decisions / One system, several ways of working</span></div>
+          <h2 id="decisions-title">Give each view <em class="serif">a clear job.</em></h2>
+          <p>Rather than forcing all CRM work into a universal layout, I used familiar patterns with specific purposes—and repeated information structures wherever consistency reduces the learning cost.</p>
+          <div class="decision-panel">
+            <div class="decision-box"><span class="overline">01 / Comparison</span><h3>Table for finding and triage</h3><p>Consistent columns make lead identity, ownership, and status easier to compare; filtering and smart lists help users narrow the working set.</p></div>
+            <div class="decision-box"><span class="overline">02 / Context</span><h3>Three-zone customer record</h3><p>Stable identity on the left, chronological activity in the center, and related work to the right distinguish background from decisions.</p></div>
+            <div class="decision-box"><span class="overline">03 / Progression</span><h3>Board for opportunity status</h3><p>Pipeline columns express stage visually, with repeatable cards carrying the details of each opportunity.</p></div>
+            <div class="decision-box"><span class="overline">04 / Commitment</span><h3>Task view for follow-through</h3><p>Due dates, status, ownership, and customer association turn a vague next step into trackable work.</p></div>
+          </div>
+          <figure class="large-screen"><button class="zoom" type="button" aria-label="Enlarge EasyCRM lead detail design"><img src="assets/easycrm-1.webp" alt="EasyCRM lead detail, showing identity, communication activity, and related work in distinct areas" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">View screen ↗</span></button><figcaption>Record detail · Distinct areas for who the person is, what has happened, and what needs attention.</figcaption></figure>
+          <div class="editorial-split"><div class="split-callout"><h3>Decision: let the timeline lead.</h3><p>The activity stream carries the changing story of the relationship. Giving it visual priority supports reading without making the static profile disappear.</p><p><strong>Tradeoff:</strong> A richer record increases information density. Stable zones, labels, and separation of concerns keep that density purposeful.</p></div><div class="frame-crop"><img src="assets/easycrm-detail-0.webp" alt="Detail study of an EasyCRM opportunity card in the pipeline" width="384" height="997" loading="lazy"></div></div>
+          <figure class="large-screen"><button class="zoom" type="button" aria-label="Enlarge EasyCRM deals pipeline"><img src="assets/crm-gallery/5.webp" alt="EasyCRM deals board with opportunity cards grouped in stage columns" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">View screen ↗</span></button><figcaption>Pipeline · Stages provide the spatial structure while each deal card preserves an individual opportunity's context.</figcaption></figure>
+        </section>
+        <section class="chapter" id="system" aria-labelledby="system-title">
+          <div class="chapter-kicker"><span class="chapter-number">05</span><span class="overline">Visual identity / A quiet system for demanding work</span></div>
+          <h2 id="system-title">Designed to help <em class="serif">the data speak.</em></h2>
+          <p>EasyCRM's product UI relies on a deep navigation shell, restrained violet actions, light work surfaces, and components built for repetition. The warm editorial styling on this case study is deliberately separate from the product UI system below.</p>
+          <div class="system-surface">
+            <div class="system-header"><h3>Interface foundations</h3><p>Reconstructed from available product screens for this portfolio study; hex values are approximate, not published official tokens.</p></div>
+            <div class="token-grid" aria-label="EasyCRM estimated color tokens">
+              <div class="token"><div class="token-color" style="--swatch:#1E1B3A"></div><strong>Navigation / Deep plum</strong><code>#1E1B3A</code></div>
+              <div class="token"><div class="token-color" style="--swatch:#6556F4"></div><strong>Primary / Violet</strong><code>#6556F4</code></div>
+              <div class="token"><div class="token-color" style="--swatch:#F8F9FB"></div><strong>Workspace / Canvas</strong><code>#F8F9FB</code></div>
+              <div class="token"><div class="token-color" style="--swatch:#FFFFFF"></div><strong>Cards / Surface</strong><code>#FFFFFF</code></div>
+            </div>
+            <hr class="system-divider">
+            <div class="type-system"><div><span class="overline">Typography / A usable hierarchy</span><p class="type-lead" style="margin:18px 0 20px">Clear information.<br>Confident action.</p><p class="small-copy">A product-facing sans-serif hierarchy balances scan-friendly labels, clear titles, and readable record detail. The specimen is illustrative rather than a claim about source font files.</p></div><div class="type-stack"><div class="type-row"><span style="font-size:26px;font-weight:700">Page title</span><b>26 / 700</b></div><div class="type-row"><span style="font-size:22px;font-weight:600">Section heading</span><b>22 / 600</b></div><div class="type-row"><span style="font-size:18px">Body and records</span><b>18 / 400</b></div><div class="type-row"><span style="font-size:16px;color:#625869">Labels and meta</span><b>16 / 500</b></div></div></div>
+            <hr class="system-divider">
+            <span class="overline">Components / Repeatable patterns</span>
+            <div class="specimens">
+              <div class="specimen-panel"><h4>Actions and filters</h4><div class="demo-line"><span class="sample-primary">+ Add lead</span><span class="sample-secondary">Add note</span><span class="sample-filter">Status: Active ⌄</span></div><p class="audit-caption">Primary actions stay distinct from supporting actions and narrow-the-list controls.</p></div>
+              <div class="specimen-panel"><h4>States and navigation</h4><div class="demo-line" style="margin-bottom:19px"><span class="sample-status">Active</span><span class="sample-filter">Owner: All ⌄</span></div><div class="sample-tabs" aria-label="Example tab component"><span>Activity</span><span>Notes</span><span>Tasks</span></div><p class="audit-caption">Labels, states, and tabs provide orientation in dense information views.</p></div>
+              <div class="specimen-panel"><h4>Deal card anatomy</h4><div class="demo-deal"><strong>Example opportunity</strong><small>Linked customer · Prospect</small><div class="deal-foot"><span>Follow-up due</span><span class="avatar" aria-hidden="true">JD</span></div></div><p class="audit-caption">Illustrative component, not a verbatim representation of customer data.</p></div>
+              <div class="specimen-panel"><h4>Composition principles</h4><div class="demo-line"><span class="sample-secondary">Stable sidebar</span><span class="sample-secondary">Repeatable cards</span><span class="sample-secondary">Clear states</span></div><p class="audit-caption">A common shell helps collections, records, and task workspaces feel related without forcing the same content layout.</p></div>
+            </div>
+          </div>
+        </section>
+        <section class="chapter" id="screens" aria-labelledby="screens-title">
+          <div class="chapter-kicker"><span class="chapter-number">06</span><span class="overline">Selected interfaces / The system in practice</span></div>
+          <h2 id="screens-title">A connected workspace, <em class="serif">seen from every angle.</em></h2>
+          <div class="gallery-intro"><p>Eight real product screens tell the story from lead discovery to activity, deal progression, follow-up, and reporting.</p><p class="small-copy">Images retain their original proportions. Select any screen to inspect it at a larger size.</p></div>
+          <div class="gallery-feature"><div class="gallery-label"><div><span class="overline">01 / Start with people</span><h3>Make every lead easier to find.</h3></div><p>Collection views put scanning and filtering first, giving users a clear point of entry into the relationship.</p></div><button class="zoom" type="button" aria-label="Enlarge lead workspace screen"><img src="assets/crm-gallery/1.webp" alt="Full EasyCRM leads workspace with customer rows, search, and management actions" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button></div>
+          <div class="gallery-pair">
+            <figure class="gallery-tile"><button class="zoom" type="button" aria-label="Enlarge smart lists screen"><img src="assets/crm-gallery/2.webp" alt="EasyCRM smart lists interface for reusing filtered collections" width="1055" height="1093" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button><figcaption><span>02</span><strong>Smart lists</strong></figcaption><p>Saved filters bring recurring segments within reach.</p></figure>
+            <figure class="gallery-tile"><button class="zoom" type="button" aria-label="Enlarge relationship timeline screen"><img src="assets/crm-gallery/3.webp" alt="EasyCRM customer detail showing an activity timeline" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button><figcaption><span>03</span><strong>Relationship timeline</strong></figcaption><p>Chronology makes the customer's story readable.</p></figure>
+          </div>
+          <figure class="gallery-wide"><button class="zoom" type="button" aria-label="Enlarge notes and communication screen"><img src="assets/crm-gallery/4.webp" alt="EasyCRM notes and communication interface for keeping conversations attached to customer records" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button><figcaption><span class="overline">04</span><strong>Notes and communication</strong> / Keep context with the record.</figcaption></figure>
+          <div class="gallery-feature"><div class="gallery-label"><div><span class="overline">05 / Move the work forward</span><h3>See progress without losing the person.</h3></div><p>Opportunities grouped by stage keep the wider sales picture in view, while cards preserve local context.</p></div><button class="zoom" type="button" aria-label="Enlarge deals board screen"><img src="assets/crm-gallery/5.webp" alt="EasyCRM deals pipeline with stage columns and opportunity cards" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button></div>
+          <div class="gallery-pair">
+            <figure class="gallery-tile"><button class="zoom" type="button" aria-label="Enlarge deal detail screen"><img src="assets/crm-gallery/6.webp" alt="EasyCRM opportunity detail with related information and actions" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button><figcaption><span>06</span><strong>Deal detail</strong></figcaption><p>Inspect opportunity context before changing status.</p></figure>
+            <figure class="gallery-tile"><button class="zoom" type="button" aria-label="Enlarge task management screen"><img src="assets/crm-gallery/7.webp" alt="EasyCRM task management interface with assignments and due dates" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button><figcaption><span>07</span><strong>Tasks</strong></figcaption><p>Turn the next step into visible, assigned work.</p></figure>
+          </div>
+          <figure class="gallery-wide"><button class="zoom" type="button" aria-label="Enlarge EasyCRM analytics screen"><img src="assets/crm-gallery/8.webp" alt="EasyCRM analytics dashboard giving a higher-level view of customer and opportunity activity" width="1920" height="1018" loading="lazy"><span class="zoom-cue" aria-hidden="true">Inspect ↗</span></button><figcaption><span class="overline">08</span><strong>Analytics</strong> / Step back from individual records to see the wider picture.</figcaption></figure>
+        </section>
+        <section class="chapter" id="reflection" aria-labelledby="reflection-title">
+          <div class="chapter-kicker"><span class="chapter-number">07</span><span class="overline">Delivery / Reflection and the next iteration</span></div>
+          <h2 id="reflection-title">Less searching for context. <em class="serif">More space to act.</em></h2>
+          <p class="intro">The design outcome is a common record model across leads, activities, opportunities, and tasks, with each workspace optimized for the decision it supports.</p>
+          <p>This case study documents design structure and visible product work. It does not claim a measured uplift in conversion, task completion, or team productivity.</p>
+          <div class="reflection"><h3>What the work reinforced</h3><ul><li><strong>Clarity</strong><span>Give identity, history, and next actions separate visual roles so a dense page remains legible.</span></li><li><strong>Consistency</strong><span>Keep card anatomy, status language, and common actions recognizable as users change workspaces.</span></li><li><strong>Continuity</strong><span>Allow a person to move from a collection to the customer record and back into coordinated work.</span></li></ul></div>
+          <div class="ending"><h3>What I would validate next</h3><p>Run a task-based usability study: ask participants to locate an unfamiliar lead, explain the last interaction, and assign a follow-up. Observe navigation reversals, incorrect interpretations of status, and whether the relationship context survives the move into tasks.</p></div>
+        </section>
+      </div>
+    </div>
+    <div class="container"><a class="next-project" href="goodpaw.html"><div><span>Next case study</span><h2>GoodPaw</h2></div><span class="next-arrow" aria-hidden="true">↗</span></a></div>
+  </main>
+  <footer class="container footer"><span>Akshay Attri · Selected product design work</span><a class="text-link" href="index.html#work">Back to all projects ↗</a></footer>
+  <dialog class="viewer" id="viewer" aria-label="Enlarged EasyCRM screen"><button class="viewer-close" type="button" aria-label="Close enlarged image">Close ×</button><img src="" alt=""><p class="viewer-caption"></p></dialog>
+  <script>
+    (function(){
+      const viewer=document.getElementById('viewer');
+      const large=viewer.querySelector('img');
+      const caption=viewer.querySelector('.viewer-caption');
+      let lastTrigger=null;
+      document.querySelectorAll('.zoom').forEach(function(trigger){
+        trigger.addEventListener('click',function(){
+          const source=trigger.querySelector('img');
+          if(!source)return;
+          lastTrigger=trigger;
+          large.src=source.currentSrc||source.src;
+          large.alt=source.alt;
+          caption.textContent=source.alt;
+          viewer.showModal();
+          document.body.classList.add('modal-open');
+          viewer.querySelector('.viewer-close').focus();
+        });
+      });
+      function closeViewer(){viewer.close()}
+      viewer.querySelector('.viewer-close').addEventListener('click',closeViewer);
+      viewer.addEventListener('click',function(event){if(event.target===viewer)closeViewer()});
+      viewer.addEventListener('close',function(){
+        document.body.classList.remove('modal-open');
+        large.removeAttribute('src');
+        if(lastTrigger)lastTrigger.focus({preventScroll:true});
+      });
+      const links=Array.from(document.querySelectorAll('.section-rail nav a'));
+      if('IntersectionObserver' in window){
+        const observer=new IntersectionObserver(function(entries){
+          const visible=entries.filter(function(entry){return entry.isIntersecting}).sort(function(a,b){return a.boundingClientRect.top-b.boundingClientRect.top});
+          if(!visible.length)return;
+          links.forEach(function(link){
+            if(link.getAttribute('href')==='#'+visible[0].target.id)link.setAttribute('aria-current','location');
+            else link.removeAttribute('aria-current');
+          });
+        },{rootMargin:'-18% 0px -63% 0px',threshold:0});
+        document.querySelectorAll('.chapter').forEach(function(section){observer.observe(section)});
+      }
+      links.forEach(function(link){link.addEventListener('click',function(){links.forEach(function(other){other.removeAttribute('aria-current')});link.setAttribute('aria-current','location')})});
+    })();
+  </script>
+</body>
+</html>
